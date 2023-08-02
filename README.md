@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Inventory Management System - README
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is an Inventory Management System built using React.js for the frontend. It allows Managers to add or remove inventory items, and Assistants can view the inventory. The system includes visual infographics such as charts and tables to represent the available inventory and its details.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Deployment](#deployment)
+- [Backend (Optional)](#backend-optional)
+- [Bonus Features (Optional)](#bonus-features-optional)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The Inventory Management System is a web application that allows users with different roles (Manager and Assistant) to interact with the inventory data. Managers can add new items or remove existing ones, while Assistants can only view the inventory details. The system includes a visual chart to represent the quantity of each item in the inventory.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- User Management:
+  - Managers can add and remove inventory items.
+  - Assistants can view inventory details.
+- Visual Infographics:
+  - A bar chart to represent the quantity of each item in the inventory.
+- Authentication (Basic):
+  - Login functionality to differentiate between Manager and Assistant.
+  - Passwords are stored as plain text (for simplicity, in a real-world scenario, use secure authentication methods).
+- Responsive Design:
+  - The application is designed to be responsive and work well on various devices.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+1. Make sure you have Node.js installed on your system.
+2. Clone this repository to your local machine.
+3. Open a terminal in the project directory and run the following command to install the required dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. After installing the dependencies, start the development server with the following command:
 
-### `npm run eject`
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Open your web browser and navigate to `http://localhost:3000` to access the application.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. You will be redirected to the Home page, where you can access the Manager or Assistant dashboard based on your role.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. For demonstration purposes, you can log in as a Manager with the credentials:
+   - Username: manager
+   - Password: managerpassword
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   Or log in as an Assistant with the credentials:
+   - Username: assistant
+   - Password: assistantpassword
 
-## Learn More
+## Deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The frontend application can be deployed using services like Vercel, Netlify, AWS, or others. To deploy:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Build the production version of the React app:
 
-### Code Splitting
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Deploy the contents of the `build` folder to your preferred hosting platform.
 
-### Analyzing the Bundle Size
+## Backend (Optional)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The backend implementation for this project is optional. If you want to build the backend using Node.js and Express.js to perform CRUD operations and integrate with a database, please refer to the backend documentation provided in the `backend/README.md` file.
 
-### Making a Progressive Web App
+## Bonus Features (Optional)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+For the optional bonus features such as Assistant's item request, secure authentication, and integration with OpenAI/Chat GPT, please refer to the documentation provided in the `bonus_features/README.md` file.
 
-### Advanced Configuration
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Contributions to this project are welcome! If you find any issues or have improvements to suggest, please feel free to open an issue or submit a pull request.
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
