@@ -9,8 +9,6 @@ This project is an Inventory Management System built using React.js for the fron
 - [Installation](#installation)
 - [Usage](#usage)
 - [Deployment](#deployment)
-- [Backend (Optional)](#backend-optional)
-- [Bonus Features (Optional)](#bonus-features-optional)
 - [Contributing](#contributing)
 - [License](#license)
 
